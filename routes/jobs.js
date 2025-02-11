@@ -6,10 +6,4 @@ const {getAllJobs, getJob , createJob , deleteJob , updateJob } = require('../co
 router.route('/').post(createJob).get(getAllJobs)
 router.route('/:id').get(getJob).delete(deleteJob).patch(updateJob)
 
-module.exports = {
-    getAllJobs, 
-    getJob , 
-    createJob , 
-    deleteJob , 
-    updateJob
-}
+module.exports = router
